@@ -1,0 +1,26 @@
+<%- include('./includes/head.ejs') %>
+
+<body>
+    <%- include('./includes/nav.ejs') %>
+    <br>
+    
+    <main class="mainContainer">
+        <h1>Welcome to Book Library</h1>
+        <hr>
+        <% if (books.length > 0) { %>
+        <ul>
+            <% for(let b of books) { %>
+            <li>
+                <a href="/bookDetails/<%= b.id %>">
+                    <h3><%= b.title %></h3>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+        <% } else {%>
+        <h1>No Books to Show</h1>
+        <% }%>
+    </main>
+</body>
+
+</html>

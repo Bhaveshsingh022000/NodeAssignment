@@ -1,0 +1,38 @@
+.mainContainer{
+    width:50%;
+    background-color:#00a071;
+    margin: auto;
+    height:500px;
+    margin-top:22px;
+    overflow:auto;
+    padding: 15px;
+    border-radius:20px;
+}
+
+.mainContainer h1{
+    color:white;
+    text-align:center;
+    padding:5px;
+    margin-bottom:7px;
+}
+
+.mainContainer li a{
+    text-decoration:none;
+}
+
+.mainContainer li{
+    padding:5px;
+    color:white;
+}
+
+.mainContainer li:hover{
+    background-color:white;
+    color: black;
+}
+
+.mainContainer li a, 
+.mainContainer a:visited, 
+.mainContainer a:hover, 
+.mainContainer a:active{
+    color: inherit;
+}

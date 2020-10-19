@@ -1,0 +1,22 @@
+<%- include('./includes/head.ejs') %>
+
+<body>
+    <%- include('./includes/nav.ejs') %>
+    <main>
+        <div class="bookContainer">
+            <img class="bookImage" src="/assets/book.jpg" />
+            <% if(book.length > 0) { %>
+            <div class="bookContents">
+                <% for(let b of book) { %>
+                <h2><%= b.title %></h2>
+                <p><b>Price</b> : <%= b.price %></p>
+                <p><b>Description</b> : <%= b.description %></p>
+                <p><b>Created At</b> : <%= b.createdAt %></p>
+                <% } %>
+            </div>
+            <% } else {%>
+            <h1>No Books Found</h1>
+            <% } %>
+        </div>
+    </main>
+</body>
